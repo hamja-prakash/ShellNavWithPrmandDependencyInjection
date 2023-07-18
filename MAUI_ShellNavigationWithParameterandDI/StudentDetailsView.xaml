@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MAUI_ShellNavigationWithParameterandDI.StudentDetailsView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:MAUI_ShellNavigationWithParameterandDI.ViewModels"
+    Title="StudentDetailsView"
+    x:DataType="viewmodels:StudentDetailsViewModel">
+    <VerticalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label
+            FontAttributes="Bold"
+            FontSize="18"
+            Text="Student Details : " />
+
+        <Label FontSize="16" Text="{Binding StudentDetail.name}" />
+
+        <Label FontSize="16" Text="{Binding StudentDetail.email}" />
+
+        <Label FontSize="16" Text="{Binding StudentDetail.gender}" />
+    </VerticalStackLayout>
+</ContentPage>
